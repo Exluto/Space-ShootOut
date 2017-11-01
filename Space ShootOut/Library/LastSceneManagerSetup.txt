@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SpaceFighter/demo.unity
+- path: Assets/Art/SpaceFighter/demo.unity
   isLoaded: 1
   isActive: 1
