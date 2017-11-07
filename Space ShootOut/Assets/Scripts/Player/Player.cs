@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
 		m_currentHealth += healAmount;
 	}
 	
-		public void CheckIsDead() {
+		public bool CheckIsDead() {
 			if(m_currentHealth >= 0) {
 				m_isDead = true;
 				Destroy(this.gameObject);
@@ -43,6 +43,8 @@ public class Player : MonoBehaviour {
 					respawnPlayer();
 				}
 			}
+
+			return m_isDead;
 		}
 
 		public void respawnPlayer() {

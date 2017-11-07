@@ -59,4 +59,8 @@ public class GameManager : MonoBehaviour {
 	public void RocketHit() {
 		m_rocketHits++;
 	}
+
+	public void resetStats() {
+		m_rocketHits = 0;
+	}
 }
