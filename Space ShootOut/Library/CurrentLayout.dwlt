@@ -353,7 +353,7 @@ MonoBehaviour:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_LastSceneViewRotation: {x: -0.32842758, y: -0.092443995, z: 0.032319646, w: -0.9394386}
+  m_LastSceneViewRotation: {x: 0.012318533, y: -0.009002895, z: 0.000114115304, w: 0.99988365}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\GameDev\_Projects\Unity\SS\Space-ShootOut\Space ShootOut
+  m_LastProjectPath: D:\GameDev\_Projects\Unity\Project\Space-ShootOut\Space ShootOut
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
@@ -734,6 +734,6 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 622
+    y: 624
     width: 1359
-    height: 396
+    height: 394
