@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 	private float x_thrust = -20.0f;
 	private float x_ReThrust = 15.0f;
-	private float x_RiThrust = 10.0f;
-	private float x_LeThrust = -10.0f;
+	private float x_LeThrust = 10.0f;
+	private float x_RiThrust = -10.0f;
 	private float x_tilt = 1;
 
 	private KeyCode x_ForwardVelocity;
@@ -33,11 +33,11 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(Input.GetKey(x_RightVelocity)) {
-			x_rb.AddForce(x_LeThrust, 0, 0, ForceMode.Acceleration);
+			x_rb.AddForce(x_RiThrust, 0, 0, ForceMode.Acceleration);
 		}
 
 		if(Input.GetKey(x_LeftVelocity)) {
-			x_rb.AddForce(x_RiThrust, 0, 0, ForceMode.Acceleration);
+			x_rb.AddForce(x_LeThrust, 0, 0, ForceMode.Acceleration);
 		}
 
 		x_rb.rotation = Quaternion.Euler (0.0f, 0.0f, x_rb.velocity.x * -x_tilt);
