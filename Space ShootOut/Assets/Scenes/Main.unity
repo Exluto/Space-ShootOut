@@ -147,10 +147,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 54893378819087038, guid: dea08ea5500d58e4e8df2e95d3429279, type: 2}
+    - target: {fileID: 114140748420280240, guid: dea08ea5500d58e4e8df2e95d3429279,
+        type: 2}
+      propertyPath: x_RocketForce
+      value: 500
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dea08ea5500d58e4e8df2e95d3429279, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &801120089 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20299341800046994, guid: dea08ea5500d58e4e8df2e95d3429279,
+    type: 2}
+  m_PrefabInternal: {fileID: 150089745}
 --- !u!1 &972429140
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,3 +242,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1024542239 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1808887447298220, guid: dea08ea5500d58e4e8df2e95d3429279,
+    type: 2}
+  m_PrefabInternal: {fileID: 150089745}
+--- !u!114 &1024542247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1024542239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc9e5eea9ceb834791b38f6993e412f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x_PlayerCamera: {fileID: 801120089}
+  x_RocketCamera: {fileID: 20015476131995606, guid: 6408dcfdb5121244e8e98bc85c5fde95,
+    type: 2}
