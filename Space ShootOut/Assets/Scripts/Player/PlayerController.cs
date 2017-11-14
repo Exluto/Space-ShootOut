@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour {
+public class PlayerController : NetworkBehaviour {
 	private float x_thrust = -20.0f;
 	private float x_ReThrust = 15.0f;
 	private float x_LeThrust = 10.0f;
