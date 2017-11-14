@@ -27,7 +27,7 @@ public class Warhead : MonoBehaviour {
 
 			Temp_RigidBody.AddForce(transform.forward * x_RocketForce);
 
-			Destroy(Temp_Rocket_Handler, 10.0f);
+			Destroy(Temp_Rocket_Handler, 10000.0f);
 		}
 		
 	}

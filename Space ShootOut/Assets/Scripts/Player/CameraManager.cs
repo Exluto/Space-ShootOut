@@ -21,6 +21,7 @@ public class CameraManager : MonoBehaviour {
 	void Start () {
 		x_PlayerView = KeyCode.R;
 		
+		
 	}
 	
 	// Update is called once per frame

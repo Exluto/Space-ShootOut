@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 65139358325653116}
   - component: {fileID: 65342360001505414}
   - component: {fileID: 114140748420280240}
+  - component: {fileID: 114402482269226888}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -743,7 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rocket_Emitter: {fileID: 1161643827193152}
   Rocket: {fileID: 1384432876764210, guid: 6408dcfdb5121244e8e98bc85c5fde95, type: 2}
-  x_RocketForce: 5000
+  x_RocketForce: -10000
 --- !u!114 &114242547558583436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -756,6 +757,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   x_rb: {fileID: 54770083509024118}
+--- !u!114 &114402482269226888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1808887447298220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc9e5eea9ceb834791b38f6993e412f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x_PlayerCamera: {fileID: 20299341800046994}
+  x_RocketCamera: {fileID: 0}
 --- !u!124 &124210512725852696
 Behaviour:
   m_ObjectHideFlags: 1
