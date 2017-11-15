@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 	private float x_LeThrust = 10.0f;
 	private float x_RiThrust = -10.0f;
 	private float x_tilt = 1.0f;
+	// x_rotation not in use, used for x_rb.MoveRotation method at bottom. Vector3 newPos goes up here, other goes in fixed update
 	private float x_rotation = 1.0f;
 
 	private KeyCode x_ForwardVelocity;
@@ -17,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 	private KeyCode x_LeftVelocity;
 	public Rigidbody x_rb;
 
-	Vector3 newPos = new Vector3(10.0f, 0, 3.0f);
+	
 
 	void Start() {
 		x_rb = GetComponent<Rigidbody>();
@@ -49,11 +51,6 @@ public class PlayerController : MonoBehaviour {
 
 		x_rb.rotation = Quaternion.Euler (0.0f, 0.0f, x_rb.velocity.x * -x_tilt);
 		x_rb.drag = 0.8f;
-
-		if(x_rb.position.x <= 1.0f) {
-			Vector3 direction = (newPos - transform.position).normalized;
-            x_rb.MovePosition(transform.position + direction * x_rotation * Time.fixedDeltaTime);
-		}
 		
 	}
 }
@@ -66,3 +63,10 @@ public class PlayerController : MonoBehaviour {
 
 		// Vector3 Movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		// x_rb.velocity = Movement * x_speed;
+
+/*	if(x_rb.position.x <= 1.0f) {
+			Vector3 direction = (newPos - transform.position).normalized;
+            x_rb.MovePosition(transform.position + direction * x_rotation * Time.fixedDeltaTime);
+		}
+		Vector3 newPos = new Vector3(10.0f, 0, 3.0f);
+		*/
