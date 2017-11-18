@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour {
+public class PlayerController : NetworkBehaviour {
 	private float x_thrust = -20.0f;
 	private float x_ReThrust = 15.0f;
 	private float x_LeThrust = 10.0f;
 	private float x_RiThrust = -10.0f;
 	private float x_tilt = 1.0f;
 	// x_rotation not in use, used for x_rb.MoveRotation method at bottom. Vector3 newPos goes up here, other goes in fixed update
-	private float x_rotation = 1.0f;
+//	private float x_rotation = 1.0f;
 
 	private KeyCode x_ForwardVelocity;
 	private KeyCode x_ReverseVelocity;
